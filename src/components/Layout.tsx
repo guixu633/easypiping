@@ -28,8 +28,9 @@ const Layout = () => {
             <div>
               <h3 className="text-lg font-semibold mb-4">Contact</h3>
               <ul className="space-y-2 text-gray-400">
-                <li>Email: contact@easypiping.com</li>
-                <li>Phone: +1 234 567 890</li>
+                <li>Email: billy@easypiping.com</li>
+                <li>Tel: 86-575-88005580</li>
+                <li>Fax: 86-575-85127987</li>
               </ul>
             </div>
           </div>

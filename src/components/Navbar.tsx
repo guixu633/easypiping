@@ -26,7 +26,11 @@ const Navbar = () => {
         <div className="flex justify-between h-16">
           <div className="flex items-center">
             <Link to="/" className="flex-shrink-0 flex items-center">
-              <ShoppingBag className="h-8 w-8 text-blue-600" />
+              <img 
+                src="http://windwin.oss-cn-beijing.aliyuncs.com/easypiping/icon.jpg" 
+                alt="EasyPiping Logo" 
+                className="h-10 w-auto mr-2"
+              />
               <span className="ml-2 text-xl font-bold text-gray-800">EasyPiping</span>
             </Link>
           </div>

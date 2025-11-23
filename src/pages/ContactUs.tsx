@@ -1,4 +1,4 @@
-import { Mail, Phone, MapPin } from 'lucide-react';
+import { Mail, Phone, MapPin, User, Globe } from 'lucide-react';
 
 const ContactUs = () => {
   return (
@@ -15,28 +15,43 @@ const ContactUs = () => {
           </p>
           
           <div className="space-y-6">
+            {/* Contact Person */}
+            <div className="flex items-start">
+              <div className="flex-shrink-0">
+                <User className="h-6 w-6 text-blue-600" />
+              </div>
+              <div className="ml-4">
+                <h3 className="text-lg font-medium text-gray-900">Contact Person</h3>
+                <p className="text-gray-600 font-medium">Mr. Billy Ding</p>
+                <p className="text-gray-600">Mobile: 86-13567200797</p>
+              </div>
+            </div>
+
+            {/* Email & Skype */}
             <div className="flex items-start">
               <div className="flex-shrink-0">
                 <Mail className="h-6 w-6 text-blue-600" />
               </div>
               <div className="ml-4">
-                <h3 className="text-lg font-medium text-gray-900">Email</h3>
-                <p className="text-gray-600">sales@easypiping.com</p>
-                <p className="text-gray-600">support@easypiping.com</p>
+                <h3 className="text-lg font-medium text-gray-900">Email & Skype</h3>
+                <p className="text-gray-600">Email: billy@easypiping.com</p>
+                <p className="text-gray-600">Skype: easypiping.billy</p>
               </div>
             </div>
 
+            {/* Phone & Fax */}
             <div className="flex items-start">
               <div className="flex-shrink-0">
                 <Phone className="h-6 w-6 text-blue-600" />
               </div>
               <div className="ml-4">
-                <h3 className="text-lg font-medium text-gray-900">Phone</h3>
-                <p className="text-gray-600">+86 21 1234 5678</p>
-                <p className="text-gray-600">Mon-Fri 9am to 6pm (GMT+8)</p>
+                <h3 className="text-lg font-medium text-gray-900">Tel & Fax</h3>
+                <p className="text-gray-600">Tel: 86-575-88005580</p>
+                <p className="text-gray-600">Fax: 86-575-85127987</p>
               </div>
             </div>
 
+            {/* Office Address */}
             <div className="flex items-start">
               <div className="flex-shrink-0">
                 <MapPin className="h-6 w-6 text-blue-600" />
@@ -44,9 +59,25 @@ const ContactUs = () => {
               <div className="ml-4">
                 <h3 className="text-lg font-medium text-gray-900">Office</h3>
                 <p className="text-gray-600">
-                  123 International Trade Center<br />
-                  Pudong District, Shanghai<br />
-                  China
+                  512#, B1 Building, Margaret Commercial Center<br />
+                  Shaoxing, China<br />
+                  Zip: 312000
+                </p>
+              </div>
+            </div>
+
+            {/* Online Presence */}
+            <div className="flex items-start">
+              <div className="flex-shrink-0">
+                <Globe className="h-6 w-6 text-blue-600" />
+              </div>
+              <div className="ml-4">
+                <h3 className="text-lg font-medium text-gray-900">Online</h3>
+                <p className="text-gray-600">
+                  Showroom: <a href="http://cnpipetool.en.alibaba.com" className="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">cnpipetool.en.alibaba.com</a>
+                </p>
+                <p className="text-gray-600">
+                  Website: <a href="http://www.easypiping.com" className="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">www.easypiping.com</a>
                 </p>
               </div>
             </div>
@@ -97,4 +128,3 @@ const ContactUs = () => {
 };
 
 export default ContactUs;
-

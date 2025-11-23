@@ -4,7 +4,7 @@ const AboutUs = () => {
       <div className="max-w-3xl mx-auto text-center mb-16">
         <h1 className="text-4xl font-bold text-gray-900 mb-6">About EasyPiping</h1>
         <p className="text-xl text-gray-600">
-          Your trusted partner in global trade, specializing in industrial piping solutions since 2010.
+          We're EasyPiping Co., Ltd
         </p>
       </div>
 
@@ -15,12 +15,16 @@ const AboutUs = () => {
         <div>
           <h2 className="text-2xl font-bold text-gray-900 mb-4">Who We Are</h2>
           <p className="text-gray-600 mb-4">
-            EasyPiping is a leading exporter of industrial piping materials, fittings, and valves. 
-            Headquartered in Shanghai, we bridge the gap between premium Chinese manufacturers and global clients.
+            A manufacturer for tube tool and an Agent for medium scale manufacturers and distributors all over the world; we are very familiar to China hand tools makers, Thanks to so many years in this filed.
+          </p>
+          <p className="text-gray-600 mb-4">
+            We specialized in: plumbing tools, pliers and tubing tools. Now we are developing construction machines market. We have been offering customers worldwide the absolutely best value in professional quality, innovative products.
           </p>
           <p className="text-gray-600">
-            Our mission is to simplify the procurement process for international buyers by ensuring quality, 
-            transparency, and reliability in every transaction.
+            We also supplier: Adjustable wrenches, hammers and files, we are in China, so we know all the best makers in China.
+          </p>
+          <p className="text-gray-600 mt-4 italic">
+            "For save your and your clients' money, instead of buying OEM products from EU or USA, it is time for you to buy from China directly, no matter what Brand tools you are buying, the original is 80% China."
           </p>
         </div>
       </div>
