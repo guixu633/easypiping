@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Layout from './components/Layout';
 import Home from './pages/Home';
 import Product from './pages/Product';
+import ProductDetail from './pages/ProductDetail';
 import Solutions from './pages/Solutions';
 import News from './pages/News';
 import AboutUs from './pages/AboutUs';
@@ -14,6 +15,7 @@ function App() {
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
           <Route path="products" element={<Product />} />
+          <Route path="products/:code" element={<ProductDetail />} />
           <Route path="solutions" element={<Solutions />} />
           <Route path="news" element={<News />} />
           <Route path="about" element={<AboutUs />} />
@@ -25,4 +27,3 @@ function App() {
 }
 
 export default App;
-
