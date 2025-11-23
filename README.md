@@ -38,6 +38,7 @@ npm run dev
 src/
 ├── components/     # 公共组件 (Navbar, Layout 等)
 ├── pages/          # 页面组件 (Home, Product, Solutions 等)
+├── data/           # 数据文件 (products.ts 等)
 ├── App.tsx         # 主应用组件和路由配置
 ├── main.tsx        # 入口文件
 └── index.css       # 全局样式 (Tailwind 指令)
@@ -47,7 +48,7 @@ src/
 
 项目包含以下主要页面：
 - **Home**: 首页
-- **Product**: 商品展示
+- **Product**: 商品展示 (支持多图、分类浏览、详情页)
 - **Solutions**: 解决方案
 - **News**: 公司新闻
 - **About Us**: 关于我们
@@ -55,17 +56,28 @@ src/
 
 ## 构建部署
 
-构建生产环境版本：
+### 1. 构建静态文件
+
+运行以下命令将项目构建为生产环境的静态文件：
 
 ```bash
 npm run build
 ```
 
-构建完成后，生成的文件位于 `dist` 目录下。
+构建完成后，所有静态资源（HTML, CSS, JS, 图片引用等）都会生成在项目根目录下的 `dist` 文件夹中。
 
-本地预览构建后的版本：
+### 2. 部署说明
+
+你可以将 `dist` 文件夹中的所有内容直接上传到任何静态网站托管服务，例如：
+- **Nginx / Apache 服务器**: 将 `dist` 内容复制到 web root 目录。
+- **GitHub Pages**: 推送 `dist` 内容到 `gh-pages` 分支。
+- **Vercel / Netlify**: 连接你的 Git 仓库，设置 Build command 为 `npm run build`，Output directory 为 `dist`。
+- **阿里云 OSS / AWS S3**: 将 `dist` 内容上传至开启了静态网站托管功能的存储桶。
+
+### 3. 本地预览构建结果
+
+在部署前，你可以在本地预览构建后的效果：
 
 ```bash
 npm run preview
 ```
-
